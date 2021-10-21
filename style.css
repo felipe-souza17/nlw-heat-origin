@@ -1,14 +1,29 @@
 * {
   margin: 0;
 }
-html,
+html {
+  height: 100%;
+}
 body {
   --black: hsl(240, 6%, 13%);
   --gray: hsl(240, 9%, 89%);
 
-  height: 100%;
+  background: hsl(240, 6%, 10%);
+  color: var(--gray);
+
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+
+.background {
+  background: hsl(240, 9%, 97%);
+  color: hsl(240, 6%, 10%);
+}
+.bg-mode {
+  background-image: url(images/light-mode.png);
+}
+.text-mode {
+  color: hsl(240, 6%, 10%);
 }
 
 body {
@@ -16,6 +31,20 @@ body {
   place-items: center;
 }
 
+.btn-light {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  background-color: transparent;
+  font-size: 30px;
+  border: none;
+}
+.fa-sun {
+  color: #ffa91c;
+}
+.fa-moon {
+  color: hsl(240, 6%, 10%);
+}
 main {
   background: url(images/background.svg);
   width: 375px;
@@ -26,8 +55,6 @@ main {
   max-width: 250px;
   margin: 0 auto;
   text-align: center;
-
-  color: var(--gray);
 }
 
 .avatar {
