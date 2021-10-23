@@ -9,4 +9,5 @@
 </div>
 
 <h2>Deploy:</h2>
-<p>Coming Soon...</p>
+
+[Github Pages](https://felipe-souza17.github.io/nlw-heat-origin/)
