@@ -10,6 +10,7 @@ body {
 
   background: hsl(240, 6%, 10%);
   color: var(--gray);
+  overflow-x: hidden;
 
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -19,8 +20,11 @@ body {
   background: hsl(240, 9%, 97%);
   color: hsl(240, 6%, 10%);
 }
-.bg-mode {
-  background-image: url(images/light-mode.png);
+.bg-desktop-light {
+  background: url(images/desktop-light.svg) no-repeat center/cover;
+}
+.bg-mobile-light {
+  background: url(images/mobile-light.svg) no-repeat center/cover;
 }
 .text-mode {
   color: hsl(240, 6%, 10%);
@@ -96,6 +100,13 @@ a {
 
   justify-content: center;
 }
+span {
+  color: var(--gray);
+  transition: 0.5s;
+}
+span:hover {
+  color: gray;
+}
 
 p {
   margin-top: 2rem;
@@ -111,4 +122,41 @@ ul {
   gap: 0.5rem;
 
   justify-content: center;
+}
+li {
+  position: relative;
+  top: 0;
+  transition: top ease 0.3s;
+}
+
+li:hover {
+  top: -5px;
+}
+@media (max-width: 720px) {
+  .btn-light {
+    display: none;
+  }
+}
+
+@media (min-width: 720px) {
+  /* Background */
+  body {
+    background: #121212 url(images/Desktop.svg) no-repeat center/cover;
+  }
+  main {
+    background: url(images/background-desktop.svg) no-repeat center/cover;
+    width: 25rem;
+    min-height: 0px;
+    height: auto;
+    margin: 0 0 15px;
+    transition: 0.3s;
+  }
+  /* Container */
+  .avatar {
+    margin: 17rem auto 0;
+  }
+
+  ul {
+    margin: 3rem 0;
+  }
 }

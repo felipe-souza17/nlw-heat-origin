@@ -33,10 +33,9 @@ getGitHubProfileInfos()
 turn_mode.addEventListener('click', () => {
   let bg_card = document.getElementById('bg-card')
   let userLink = document.getElementById('userLink')
-  let i = document.querySelector('.btn-light')
 
   body.classList.toggle('background')
-  bg_card.classList.toggle('bg-mode')
+  bg_card.classList.toggle('bg-desktop-light')
   userLink.classList.toggle('text-mode')
   if (turn_mode.innerHTML.includes('fa-sun'))
     turn_mode.innerHTML = '<i class="fas fa-moon"></i>'

@@ -11,3 +11,11 @@
 <h2>Deploy:</h2>
 
 [Github Pages](https://felipe-souza17.github.io/nlw-heat-origin/)
+
+<h2>Challenges:</h2>
+
+- [✔️] Desktop version
+- [✔️] Change colors
+- [✔️] Apply animations
+
+#NeverStopLearning
